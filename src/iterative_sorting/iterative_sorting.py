@@ -63,13 +63,23 @@ def bubble_sort( arr ):
     n = len(arr)
     for i in range(0, n):
         print("Beggining",arr)
+        
+        # Iterate through to do the comparison
         for j in range(0, n -1):
-            print("in j  loop", j, "i:", i)
+            #If value at index j in bigger than the value next to it
             if arr[j] > arr[j + 1]:
-                pass
 
+                temp = arr[j] # --> #grab the bigger value that is in wrong position & store it in temp
+                print("Step 1: temp = ", temp, arr) #--> bigger value
 
+                arr[j] = arr[j + 1] # --> swap the smaller value and put it in the bigger values place
+                print("Step 2: arr[j] = ",arr[j], arr) # --> smaller valuer
 
+                arr[j+1] = temp # -->  replace the bigger value where the smaller one use to be
+                print("Step 3: arr[j+1] = ",arr[j+1], arr) # --> bigger value
+                print('==========================')
+
+    print("Final arr",arr)
     return arr
 
 

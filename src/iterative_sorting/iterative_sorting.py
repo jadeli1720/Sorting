@@ -16,6 +16,7 @@ def selection_sort( arr ):
         cur_index = i
         smallest_index = cur_index 
         # print("beggining arr", arr) # --> used this to see what was happening with the list as code was added
+
         # TO-DO: find next smallest element
         # (hint, can do in 3 loc) 
 
@@ -45,15 +46,34 @@ def selection_sort( arr ):
     # print("print the array",arr) --> final results
     return arr
 
-print(selection_sort(a))
+# print(selection_sort(a))
 
 
 # TO-DO:  implement the Bubble Sort function below
-# def bubble_sort( arr ):
+"""
+possible solution:
 
-#     return arr
+for i from 1 to n
+    for j from 0 to n -1
+        if a[j] > a[a+1]
+        swap(a[j], a[j+1])
+"""
+def bubble_sort( arr ):
+    # loop through the array
+    n = len(arr)
+    for i in range(0, n):
+        print("Beggining",arr)
+        for j in range(0, n -1):
+            print("in j  loop", j, "i:", i)
+            if arr[j] > arr[j + 1]:
+                pass
 
 
+
+    return arr
+
+
+bubble_sort(a)
 # # STRETCH: implement the Count Sort function below
 # def count_sort( arr, maximum=-1 ):
 

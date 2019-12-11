@@ -20,42 +20,50 @@
 arr1 = [1, 5, 8, 4, 2, 9, 6, 0, 3, 7]
 arr4 = [0, 1, 2, 3, 4, 5]
 
-def merge( arrA, arrB ): # --> sort and merge pieces together?
+def merge( arrA, arrB ): # --> sort and merge pieces together
     # print(arrA, arrB)
+
+    # Total length of both arrays
     elements = len( arrA ) + len( arrB )
-    # print("elements", elements)
-
+    print("elements", elements)
+    
+    # Creates a list of 0's based on the length of elements
     merged_arr = [0] * elements
-    # print("merged_arr",merged_arr) # --> Equals the same length of the 2 lists added together (concatinated), but filled with zero's. Placeholders?
+    print("merged_arr",merged_arr) 
 
 
-    # What will my base case be?
-    # TO-DO
+    # TO-DO --> for loop?
+        
 
     
     return merged_arr
 
-# merge(arr1, arr4)
+merge(arr1, arr4)
 
 # TO-DO: implement the Merge Sort function below USING RECURSION
 def merge_sort( arr ): # --> Divide an array in to sub arrays
     # TO-DO
 
     #take a single array length and divide it in half:
-    n = int(len(arr)) # output --> length of array div. ny half
-    print("merge_sort n:", n) 
+    n = len(arr) # output --> length of array div. ny half
+    # print("merge_sort n:", n, arr) 
 
     mid = n // 2 # output --> length of array div. ny half
+    # print("merge_sort mid:",mid, arr)
 
-    print("merge_sort  mid:",mid) 
-
-    # then divide multiple times until we have a length of one -> recursion
     # if length of array is bigger than one, keep dividing
-    # Get LHS and break it down until array is length of one
-    # Get RHS and break it down until array is length of one
+    if n > 1:
+        # Get LHS and break it down until array is length of one -> recursion
+        left = merge_sort(arr[:mid]) # --> slice to the left
+        # print("merge_sort left:", left)
+
+        # Get RHS and break it down until array is length of one -> recursion
+        right = merge_sort(arr[mid:]) # --> slice to the right
+        # print("merge_sort right:", right)
+
     #Then use merge() to sort and merge to on full array
 
-    
+    # print("merge_sort final",arr)
     return arr
 
 

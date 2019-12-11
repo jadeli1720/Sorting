@@ -51,8 +51,11 @@ def merge_sort( arr ): # --> Divide an array in to sub arrays
 
     # then divide multiple times until we have a length of one -> recursion
     # if length of array is bigger than one, keep dividing
+    # Get LHS and break it down until array is length of one
+    # Get RHS and break it down until array is length of one
+    #Then use merge() to sort and merge to on full array
 
-
+    
     return arr
 
 

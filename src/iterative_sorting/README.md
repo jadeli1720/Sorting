@@ -8,16 +8,16 @@ Think back to class or team picture day. Everyone stands in a line facing the ph
 [![(VIDEO) Insert-sort with Romanian folk dance](https://i.ytimg.com/vi/ROalU379l3U/hqdefault.jpg)](https://www.youtube.com/watch?v=ROalU379l3U) 
 
 ### Algorithm
-1. Separate the first element from the rest of the array. Think about it as a sorted list of one element.
+1. [x] Separate the first element from the rest of the array. Think about it as a sorted list of one element.
 
-2. For all other indices, beginning with [1]:
+2. [x] For all other indices, beginning with [1]:
 
-    a. Copy the item at that index into a temp variable
+    a. [x] Copy the item at that index into a temp variable
 
-    b. Iterate to the left until you find the correct index in the "sorted" part of the array at which this element should be inserted  
-    - Shift items over to the right as you iterate
+    b. [x] Iterate to the left until you find the correct index in the "sorted" part of the array at which this element should be inserted  
+    - [x] Shift items over to the right as you iterate
     
-    c. When the correct index is found, copy temp into this position
+    c. [x] When the correct index is found, copy temp into this position
 
 
 ### Your Task
